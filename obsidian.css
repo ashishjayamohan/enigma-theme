@@ -19,11 +19,15 @@
   --interactive-accent: #92a1a1;
   --interactive-before: #5e6565;
   --background-modifier-border: #92a1a17a;
-  --blockquote-border: rgba(255, 255, 255, 0.6);
+  --blockquote-border: #baf5ff;
   --text-accent: #ff9640ba;
   --interactive-accent-rgb: #fe8019;
   --font-family-editor: 'Courier';
   --font-family-preview: 'Courier';
+}
+
+.theme-dark .graph-view.color-fill-attachment {
+  color: #9bb9eb;
 }
 
 #graph-view-canvas .links {
@@ -70,10 +74,12 @@ a:not(.internal-link) {
 /* blockquote */
 .cm-quote {
   color: var(--text-normal) !important;
+  border-radius: 40px 40px 0px 0px;
 }
 
 blockquote {
   border-color: var(--blockquote-border) !important;
+  border-radius: 50px;
 }
 
 /* icons at top of panes*/
